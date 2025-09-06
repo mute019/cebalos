@@ -5,14 +5,12 @@
 
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
-
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
-set(TARGET_BIN "eze-battery-manger")
+set(TARGET_BIN "eze-battery-stat-manager")
 
-
-target_include_directories(app_lib PUBLIC include)
+target_include_directories(app_lib INTERFACE include)
 
 add_executable(${TARGET_BIN} app/main.cpp)
 
-target_link_libraries(${TARGET_BIN} app_lib)
+target_link_libraries(${TARGET_BIN} PUBLIC app_lib)
