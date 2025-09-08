@@ -7,7 +7,7 @@
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
-set(TARGET_BIN "eze-battery-stat-manager")
+set(TARGET_BIN "cebalos")
 
 target_include_directories(app_lib INTERFACE include)
 

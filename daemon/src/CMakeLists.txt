@@ -1,4 +1,4 @@
-file(GLOB app_srcs
+file(GLOB app_srcs CONFIGURE_DEPENDS
     "*.cpp"
 )
 
